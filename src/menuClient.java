@@ -14,24 +14,41 @@ public class menuClient {
             BufferedReader br2 = new BufferedReader(new FileReader(readValues));
             Scanner scan1 = new Scanner(System.in); //SCAN1 -- STRINGS
             Scanner scan2 = new Scanner(System.in); //SCAN1 -- INTEGERS
+       
+            String st;
+            while ((st = br.readLine()) != null)
+                  System.out.println(st);
+            String st2;
+            while ((st2 = br2.readLine()) != null)
+                  System.out.println(st2);
+      
+            System.out.println("\n2-3 Tree has been uploaded with current data...\n\n");
             System.out.println("Would you like to add new characters to your tree?");
             System.out.println("Type  yes  or  no");
             String newData = scan1.nextLine();
             
             if (newData=="yes"){
+                  
                   //TODO instantiate tree
+                  
             }  else {
                   System.out.println("Select an option: \n1.Print tree\n2.Delete an Item\n3.Insert Item\n");
             }
             int optionSelect = scan2.nextInt();
             
             if (optionSelect==1){
+                  
                   //TODO insert printing method for tree
                   //TODO make 3 print methods, inorder, pre-order, and post-order
+                  
             } else if (optionSelect==2) {
+                  
                   //TODO decide how to delete items, node? int? data itself?
+                  
             } else if (optionSelect==3){
+                  
                   //TODO prompt insert method again
+                  
             } else {
                   System.out.println("Thanks! Come again");
             }
