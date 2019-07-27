@@ -11,7 +11,7 @@ public class menuClient {
             File readKeys = new File("keys.txt");
             File readValues = new File("values.txt");
             BufferedReader br = new BufferedReader(new FileReader(readKeys));
-            BufferedReader br = new BufferedReader(new FileReader(readValues));
+            BufferedReader br2 = new BufferedReader(new FileReader(readValues));
             Scanner scan1 = new Scanner(System.in); //SCAN1 -- STRINGS
             Scanner scan2 = new Scanner(System.in); //SCAN1 -- INTEGERS
             System.out.println("Would you like to add new characters to your tree?");
@@ -37,4 +37,10 @@ public class menuClient {
             }
             
       }
+      
+      // create methods to print heap PREORDER
+      // create methods to print heap IN-ORDER
+      // create methods to print heap POST-ORDER
+      
+      
 }
