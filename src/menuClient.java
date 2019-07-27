@@ -1,11 +1,17 @@
 // author Diana Ramirez
 // personal project to learn how the 2-3 tree works
+// will use buffered reader to read files for key value pairs
 
+import java.io.*;
 import java.util.Scanner;
 public class menuClient {
       
-      public static void main(String[] args){
+      public static void main(String[] args) throws Exception{
             //this will call heap to be created
+            File readKeys = new File("keys.txt");
+            File readValues = new File("values.txt");
+            BufferedReader br = new BufferedReader(new FileReader(readKeys));
+            BufferedReader br = new BufferedReader(new FileReader(readValues));
             Scanner scan1 = new Scanner(System.in); //SCAN1 -- STRINGS
             Scanner scan2 = new Scanner(System.in); //SCAN1 -- INTEGERS
             System.out.println("Would you like to add new characters to your tree?");
